@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "TaxMe",
+    "description": "Quick Tax Calculator",
+    "version": "1.0.0",
+    "background": {
+        "persistent": false,
+        "scripts": ["popup.js"]
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": ["activeTab"]
+}

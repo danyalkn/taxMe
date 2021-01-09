@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxMe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        background-image: linear-gradient(120deg, #f4f4f4, #cdcdcd);
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        margin: 0;
+        min-height: 250px;
+        padding: 0;
+        width: 270px;
+    }
+
+    .extension-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .extension-header h1{
+        padding: 10px 22px 2px 22px;
+    }
+
+    .select {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .extension-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .extension-input .taxme-input {
+        margin: 0px 10px 10px 10px;
+        font-size: 25px;
+        padding: 7px 0px;
+        text-align: center;
+        width: 90%;
+    }
+    .tax-button {
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 4px 9px;
+    }
+
+    .extension-input h3 {
+        margin-top: 10px;
+        border: 1px solid black;
+        padding: 4px 10px;
+    }
+    
+    .design {
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+    }
+
+    a, a:hover {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .creator {
+        display: flex;
+        justify-content: center;
+    }
+
+    h4 {
+        font-size: 12px;
+        color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="extension-header">
+            <h1 class="title">
+                TaxMe
+            </h1>
+            <h2 class="secondary">
+                Amount
+            </h2>
+        </div>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="" disabled selected hidden>Select Province/Territory</option>
+                <option value="alberta">Alberta</option>
+                <option value="bc">British Columbia</option>
+                <option value="manitoba">Manitoba</option>
+                <option value="newbrunswick">NewBrunswick</option>
+                <option value="nfl">NewfoundLand & Labrador</option>
+                <option value="nwt">Northwest Territories</option>
+                <option value="ns">Nova Scotia</option>
+                <option value="nunavut">Nunavut</option>
+                <option value="ontario">Ontario</option>
+                <option value="pei">Prince Edward Island</option>
+                <option value="quebec">Quebec</option>
+                <option value="sask">Saskatchewan</option>
+                <option value="yukon">Yukon</option>
+            </select>
+        </div>
+        <div class="extension-input">
+            <input type="number" class="taxme-input">
+            <button class="tax-button" type="submit">
+                Calculate
+            </button>
+            <div>
+                <h3>$0.00</h3>
+            </div>
+        </div>
+        <div class="creator">
+            <h4>made by <a href="https://www.instagram.com/danyal_10" target="_blank">@danyal_10</a></h3>
+        </div>
+    </div>
+    <script src="./popup.js"> 
+    </script>
+</body>
+</html>
